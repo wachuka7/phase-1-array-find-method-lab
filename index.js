@@ -61,7 +61,11 @@ const record = [
     { year: "1961", result: "N/A"},
     { year: "1960", result: "N/A"}
 ]
+  // this function returns the first element with "W", the first year with a win.
 function superbowlWin(record) {
+    //using .find the first element with "W" is found
+  
+    //if none is found it returns undefined
     const superBowlWinners = record.find(year => year.result === "W");
     return superBowlWinners ? superBowlWinners.year : undefined;
   }
